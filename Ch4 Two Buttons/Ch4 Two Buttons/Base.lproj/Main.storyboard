@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ch4_Two_Buttons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKR-8i-nFb" userLabel="GreenView">
+                                <rect key="frame" x="50" y="358.5" width="275" height="258.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPe-Cl-L3M">
+                                        <rect key="frame" x="122.5" y="102" width="30" height="55"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hPe-Cl-L3M" firstAttribute="centerX" secondItem="RKR-8i-nFb" secondAttribute="centerX" id="LRd-0h-2eG"/>
+                                    <constraint firstItem="hPe-Cl-L3M" firstAttribute="centerY" secondItem="RKR-8i-nFb" secondAttribute="centerY" id="Uoc-xY-VuP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wzi-yI-bO5" userLabel="RedView">
+                                <rect key="frame" x="50" y="50" width="275" height="258.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbI-dY-dct">
+                                        <rect key="frame" x="122.5" y="102" width="30" height="55"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="jbI-dY-dct" firstAttribute="centerX" secondItem="Wzi-yI-bO5" secondAttribute="centerX" id="7n2-Ic-j9Q"/>
+                                    <constraint firstItem="jbI-dY-dct" firstAttribute="centerY" secondItem="Wzi-yI-bO5" secondAttribute="centerY" id="A8O-DT-Qdf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94857662669999998" green="0.88224415710000004" blue="0.47048141869999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wzi-yI-bO5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="0RO-kz-jqT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wzi-yI-bO5" secondAttribute="trailing" constant="50" id="6nc-Jd-Azx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RKR-8i-nFb" secondAttribute="trailing" constant="50" id="QNa-Ru-e3j"/>
+                            <constraint firstItem="RKR-8i-nFb" firstAttribute="top" secondItem="Wzi-yI-bO5" secondAttribute="bottom" constant="50" id="RHz-mA-Jcj"/>
+                            <constraint firstItem="Wzi-yI-bO5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Sta-Bb-OGD"/>
+                            <constraint firstItem="RKR-8i-nFb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="pei-0a-4nh"/>
+                            <constraint firstItem="Wzi-yI-bO5" firstAttribute="height" secondItem="RKR-8i-nFb" secondAttribute="height" id="tgf-rM-d79"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RKR-8i-nFb" secondAttribute="bottom" constant="50" id="yi4-cn-bfK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="139"/>
+        </scene>
+    </scenes>
+</document>

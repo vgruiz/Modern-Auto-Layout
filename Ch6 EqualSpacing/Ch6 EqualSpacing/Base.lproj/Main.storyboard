@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ch6_EqualSpacing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhp-ml-1c1">
+                                <rect key="frame" x="56" y="427" width="123" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                                <state key="normal" title="Cancel" backgroundImage="buttonTemplate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fh2-71-cZi" userLabel="Leading Spacer View">
+                                <rect key="frame" x="0.0" y="428" width="56" height="50"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kh3-q9-Z37"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pj-9u-DbE" userLabel="Middle Spacer View">
+                                <rect key="frame" x="179" y="428" width="56" height="50"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2ED-7s-lmW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QWl-ms-kSt" userLabel="Trailing Spacer View">
+                                <rect key="frame" x="358" y="428" width="56" height="50"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="R3T-P2-vAO"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnn-ZT-JNQ">
+                                <rect key="frame" x="235" y="427" width="123" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                                <state key="normal" title="OK" backgroundImage="buttonTemplate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QWl-ms-kSt" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="2JR-w9-89y"/>
+                            <constraint firstItem="fh2-71-cZi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="887-xc-4it"/>
+                            <constraint firstItem="vnn-ZT-JNQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="B5K-1r-Jsy"/>
+                            <constraint firstItem="Fhp-ml-1c1" firstAttribute="leading" secondItem="fh2-71-cZi" secondAttribute="trailing" id="Fuh-bL-rc8"/>
+                            <constraint firstItem="9pj-9u-DbE" firstAttribute="leading" secondItem="Fhp-ml-1c1" secondAttribute="trailing" id="HgP-by-WWJ"/>
+                            <constraint firstItem="9pj-9u-DbE" firstAttribute="width" secondItem="fh2-71-cZi" secondAttribute="width" id="KVl-gf-ghF"/>
+                            <constraint firstItem="QWl-ms-kSt" firstAttribute="width" secondItem="fh2-71-cZi" secondAttribute="width" id="fDw-EU-2mO"/>
+                            <constraint firstItem="QWl-ms-kSt" firstAttribute="leading" secondItem="vnn-ZT-JNQ" secondAttribute="trailing" id="iiZ-u9-DAi"/>
+                            <constraint firstItem="9pj-9u-DbE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="l8E-q7-okS"/>
+                            <constraint firstItem="Fhp-ml-1c1" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pfK-rc-X95"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QWl-ms-kSt" secondAttribute="trailing" id="ttm-Ri-bZU"/>
+                            <constraint firstItem="vnn-ZT-JNQ" firstAttribute="width" secondItem="Fhp-ml-1c1" secondAttribute="width" id="u8B-uU-5ut"/>
+                            <constraint firstItem="vnn-ZT-JNQ" firstAttribute="leading" secondItem="9pj-9u-DbE" secondAttribute="trailing" id="ueG-gq-WNK"/>
+                            <constraint firstItem="fh2-71-cZi" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wCr-DH-WW9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buttonTemplate" width="11" height="9"/>
+    </resources>
+</document>
